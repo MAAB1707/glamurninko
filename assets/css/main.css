@@ -171,4 +171,11 @@
 		font-size: 14px;
 		line-height: 12px;
 	}
-}
+	/* fasthelp */
+	.fastHelp h3{
+		font-size: 30px;
+		line-height: 26px;
+	}.fastHelp--new{		
+		top: -20px;
+		left: -90px;
+	}}
