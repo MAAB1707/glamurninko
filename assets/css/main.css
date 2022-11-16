@@ -132,7 +132,7 @@
 .fastHelp--img{
 	width: 100%;
 	object-fit: contain;
-
+	margin-top: 50px;
 }
 .fastHelp--new{
 	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.205);
@@ -158,10 +158,10 @@
 @media (max-width: 575.98px) {
 	 /*NAVBAR  */
 	.navbar{
-		padding: 20px;
+		padding: 15px;
 	}
 	.navbar--contacts{
-		width: 65%;
+		width: 75%;
 		gap: 20px;
 	}
 	.navbar--social i{
