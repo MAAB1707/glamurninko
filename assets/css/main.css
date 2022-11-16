@@ -8,7 +8,7 @@
 	font-weight: 400;
 }
 :root{
-	--gray: rgb(37, 37, 37);
+	--gray: rgb(66, 65, 65);
 	--white: rgb(255, 255, 255);
 	--black: rgb(0, 0, 0);
 	--red: rgb(235, 87, 87);
@@ -16,9 +16,8 @@
 }
 /* NAVBAR */
 .navbar{
-	padding: 20px;
-	padding-bottom: 20px;
-	background: rgba(0, 0, 0, 0.274);
+	padding: 15px;
+	padding-bottom: 15px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -86,6 +85,9 @@
 	display: flex;
 	border-radius: 10px ;
 }
+.scroll-navbar{
+	background: rgba(27, 27, 27, 0.808);
+}
 /* header */
 .header{
 	height: 700px;
@@ -121,17 +123,22 @@
 .fastHelp--content{
 	gap: 20px;
 }
-.fastHelp h3{
+.fastHelp h3,
+.table--content h3,
+.package h3{
 	font-family: 'Oranienbaum';
+	text-transform: uppercase;
 	font-size: 40px;
 	line-height: 36px;
 }
-.fastHelp--content p{
+.fastHelp--content p,
+.table--content p{
 	color: var(--gray);
 }
 .fastHelp--img{
 	width: 100%;
-	object-fit: contain;
+	height: 1000px;
+	object-fit: cover;
 	margin-top: 50px;
 }
 .fastHelp--new{
@@ -146,7 +153,273 @@
 	left: -80px;
 	transform: rotate(-45deg);
 }
+/* table */
+.table{
+	margin-top: 50px;
+}
+.table--content h3{
+	margin-bottom: 15px;
+}
+.table--content__sup{
+	width: 70%;
+}
+.table-course{
+	width: 100%;
+}
+.table-course tr, th, td{
+	border: 1px solid rgba(255, 0, 0, 0.247);
+}
+.table-course th, td{
+	padding: 15px;
+}
+.table-course th{
+	font-size: 22px;
+	line-height: 20px;
+	font-weight: 600;
+}
+.table-course td,
+.table-course p, span{
+	font-weight: 600;
+}
+.table-course span{
+	font-size: 12px;
+	line-height: 10px;
+}
+.table-course i{
+	font-size: 20px;
+	font-weight: 800;
+}
+.table-course thead th:first-of-type{
+	width: 50%;
+}
+.table-course th, td{
+	width: 15%;
+}
+.table-course tbody{
+	background: #FFF000;
+}
+.table-course thead{
+	background: #FFD100;
+}
+.table-rate{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+.table-rate i{
+	border: 1px solid black;
+	padding: 5px;
+}
+.table--img{
+	width: 100%;
+	object-fit: contain;
+	margin: 25px 0 50px;
+}
+.table-course .table--order{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.table-course button{
+	background: #000;
+	color: var(--white);
+	padding: 5px 15px;
+	font-size: 16px;
+	line-height: 14px;
+}
+/* package */
+.package--list{
+	margin-top: 50px;
+	width: 100%;
+	gap: 40px;
+	margin-bottom: 50px;
+}
+.package__item{	
+	height: 450px;
+	border: 1px solid rgba(0, 0, 0, 0.233);
+	padding: 15px;
+	gap: 10px;
+	transition: 0.5s;
+}
+.package__item:hover{
+	transform: scale(1.1);
+	box-shadow: 0px 0px 8px black;
+}
+.package__item--theme h3{
+	font-size: 30px;
+	line-height: 26px;
+}
+.package__item--theme h4{
+	font-family: 'Oranienbaum';
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 18px;
+}
+.package__item--content p,span{
+	font-size: 20px;
+	line-height: 18px;
+	margin: 0;
+}
+.package__item--content span{
+	font-weight: 600;
+	margin:10px 0 15px;
+	display: block;
+}
+.package__item--price h3{
+	text-align: center;
+}
+.package__item--price .old--price{
+	font-size: 20px;
+	line-height: 18px;
 
+	color: rgba(66, 65, 65, 0.788);
+}
+.package__item--price .new--price{
+	font-family: 'roboto';
+	font-size: 30px;
+	line-height: 28px;
+	font-weight: 600;
+}
+.package__item--price .new--price i{
+	font-size: 18px;
+}
+.package__item--price h3 span{
+	width: 30%;
+	height: 1px;
+	transform: translate(110%, -8px) rotate(-10deg);
+	display: flex;
+	background: red;
+}
+.package__item--price .old--price i{
+	font-size: 16px;
+}
+.package__item--send{
+	border: none;
+	outline: none;
+	background: var(--red);
+	color: var(--white);
+	padding: 10px 15px;
+	border: 10px;
+}
+/* how to */
+a[data-fancybox] img {
+	cursor: zoom-in;
+  }
+  
+  .fancybox__container {
+	--fancybox-bg: #fff;
+	--fancybox-color: #333;
+	--fancybox-accent-color: #e879f9;
+  
+	--carousel-button-svg-filter: none;
+  
+	display: flex;
+	flex-direction: row;
+  }
+  
+  .fancybox__toolbar {
+	position: relative;
+  
+	padding: 0;
+	background: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(30px);
+	border-bottom: 1px solid #edeef0;
+  
+	text-shadow: none;
+	font-weight: 400;
+  
+	--carousel-button-svg-stroke-width: 1.75;
+	--carousel-button-svg-width: 22px;
+	--carousel-button-svg-height: 22px;
+  }
+  
+  .fancybox__slide {
+	padding-top: 8px;
+	padding-bottom: 8px;
+  }
+  
+  .fancybox__nav {
+	--carousel-button-bg: #e5e7eb;
+	--carousel-button-border-radius: 6px;
+  
+	--carousel-button-svg-width: 20px;
+	--carousel-button-svg-height: 20px;
+  
+	--carousel-button-svg-stroke-width: 2.5;
+  }
+  
+  .fancybox__leftCol {
+	width: 80vw;
+	min-height: 1px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .fancybox__rightCol {
+	width: 20vw;
+	max-width: 300px;
+	height: 100%;
+	padding: 2rem;
+	overflow: auto;
+  
+	display: flex;
+	flex-direction: column;
+  
+	border-left: 1px solid #edeef0;
+  
+	opacity: var(--fancybox-opacity, 1);
+  }
+  
+  /* Opening */
+  .fancybox__container.is-animated[aria-hidden="false"] .fancybox__rightCol {
+	animation: 0.15s ease backwards fancybox-fadeIn;
+  }
+  
+  /* Closing */
+  .fancybox__container.is-animated.is-closing .fancybox__rightCol {
+	animation: 0.15s ease both fancybox-fadeOut;
+  }
+  
+  .fancybox__container.is-animated.is-closing .fancybox__leftCol {
+	overflow: visible;
+}
+.howto h3{
+	font-family: 'Oranienbaum';
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 36px;
+	margin: 50px 0;
+}
+.howto a{
+	text-decoration: none;
+}
+.howto p{
+	width: 50%;
+	margin: auto;
+	color: var(--black);
+}
+.howto a img{
+	width: 200px;
+	object-fit: contain;
+}
+.footer{
+	padding: 15px 0;
+	background: #000;
+	gap: 20px;
+}
+.footer--up{
+	margin: 0 auto;
+	padding: 5px 10px;
+	border: 1px solid var(--white);
+	color: var(--white);
+}
+.footer ul a{
+	color: var(--white);
+}
 /* media */
 @media(max-width: 991.98px){
 	/* NAVBAR */
@@ -154,6 +427,24 @@
 		width: 55%;
 		gap: 20px;
 	}
+	.fastHelp--img{
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		margin-top: 50px;
+	}
+	/* table */
+	.table-course thead th:first-of-type{
+		width: 40%;
+	}
+	.table-course th, td{
+		width: 20%;
+	}
+	.table-course button{		
+		padding: 5px 10px;
+		font-size: 14px;
+		line-height: 12px;
+	}	
 }
 @media (max-width: 575.98px) {
 	 /*NAVBAR  */
@@ -172,10 +463,61 @@
 		line-height: 12px;
 	}
 	/* fasthelp */
-	.fastHelp h3{
+	.table-course th, td{
+		padding: 5px;
+	}
+	.fastHelp h3,
+	.table--content h3{
 		font-size: 30px;
 		line-height: 26px;
 	}.fastHelp--new{		
 		top: -20px;
 		left: -90px;
-	}}
+	}
+	.table--content p{
+		font-size: 14px;
+		line-height: 14px;
+	}
+	.table--content__sup{
+		width: 80%;
+	}
+	/* table */
+	.table-course th{
+		font-size: 14px;
+		line-height: 14px;
+		font-weight: 600;
+	}
+	.table-course td{
+		font-size: 10px;
+		line-height: 10px;
+	}
+	.table-course span{
+		font-size: 8px;
+		line-height: 8px;
+	}
+	.table-course thead i{
+		font-size: 12px;
+	}
+	.table-rate i{
+		font-size: 12px;
+		padding: 3px;
+	}
+	.table-course button{		
+		padding: 5px ;
+		font-size: 10px;
+		line-height: 8px;
+	}	
+	.howto a img{
+		width: 100px;
+	}
+	.howto h3{
+		font-size: 24px;
+		line-height: 22px;
+	}
+	.howto p{
+		width: 40%;
+		font-size: 14px;
+		line-height: 12px;
+		margin-left: 10px;
+	}
+}

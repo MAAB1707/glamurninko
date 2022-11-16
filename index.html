@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="shortcut icon" href="assets/img/logo-new.png" type="image/x-icon">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
 	<script src="assets/js/bootstrap.js"></script>
 </head>
 <body>
@@ -64,7 +65,7 @@
 	<!-- NAVBAR end -->
 
 	<!-- HEADER -->
-	<header class="header container-fluid position-relative d-flex align-items-center">
+	<header id="header" class="header container-fluid position-relative d-flex align-items-center">
 		<img src="assets/img/bg-main.png" alt="" class="header--back position-absolute">
 		<div class="header--content d-flex flex-column">
 			<img src="assets/img/logo-new.png" alt="">
@@ -88,19 +89,181 @@
 	<!-- FAST HELP END -->
 
 	<!-- TABLE  -->
-	<section class="table container"></section>
+	<section class="table container">
+		<div class="table--content d-flex flex-column "> 
+			<h3>Как все происходит</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, corporis.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, corporis.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, corporis.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, corporis.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, corporis.</p>
+			<p class="align-self-center table--content__sup">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque iure rem dignissimos repellendus eos sunt officia, optio ea fugit in beatae dolore ipsa assumenda vitae veritatis cumque, alias facere animi?</p>
+		</div>
+		<table class="table-course">
+			<thead>
+				<tr>
+					<th>Вы получаете:</th>
+					<th>Теория</th>
+					<th>Практика</th>
+					<th>Vip</th>
+				</tr>
+			</thead>
+			
+			<tr>
+				<td>Материали тренинга</td>
+				<td><i class='bx bx-check'></i></td>
+				<td><i class='bx bx-check'></i></td>
+				<td><i class='bx bx-check'></i></td>
+			</tr>
+			<tr>
+				<td>Материали тренинга</td>
+				<td><i class='bx bx-check'></i></td>
+				<td><i class='bx bx-check'></i></td>
+				<td><i class='bx bx-check'></i></td>
+			</tr>
+			<tr>
+				<td>Материали тренинга</td>
+				<td><i class='bx bx-minus' ></i></td>
+				<td><p>2.5 месяца</p>  <span>* имиджмейкер</span></td>
+				<td><p>2.5 месяца</p>  <span>*имиджмейкер</span></td>
+			</tr>
+			<tr>
+				<td>Материали тренинга</td>
+				<td><i class='bx bx-minus' ></i></td>
+				<td><i class='bx bx-check'></i></td>
+				<td><i class='bx bx-check'></i></td>
+			</tr>
+			<thead>
+				<tr>
+					<th>Цена:</th>
+					<th>7990 <i class='bx bx-ruble' ></i></th>
+					<th>7990 <i class='bx bx-ruble' ></i></th>
+					<th>7990 <i class='bx bx-ruble' ></i></th>
+				</tr>
+
+			</thead>
+			<tr>
+				<td></td>
+				<td colspan="3" ><div class="table-rate "><i class='bx bx-ruble'></i><i class='bx bx-yen'></i><i class='bx bx-dollar' ></i><i class='bx bx-euro' ></i></div></td>				
+			</tr>
+			<tr>
+				<td></td>
+				<th><div class="table--order"> <button type="submit">Заказать</button></div></th>
+				<th><div class="table--order"> <button type="submit">Заказать</button></div></th>
+				<th><div class="table--order"> <button type="submit">Заказать</button></div></th>			
+			</tr>
+		</table>
+		<img src="assets/img/2razmera_books_preview_1200_c.png" alt="" class="table--img">
+	</section>
 	<!-- TABLE END  -->
 
 	<!-- PACKAGE -->
-	<section class="package"></section>
+	<section class="package container d-flex align-items-center flex-column">
+		<h3>Пакеты Услуг</h3>
+		<div class="row package--list d-flex justify-content-center">
+			<div class="col-lg-3 col-sm-5 package__item d-flex flex-column justify-content-between">
+				<div class="package__item--theme d-flex flex-column align-items-center ">
+					<h4>Пакет</h4>
+					<h3>«Попробовать»</h3>					
+				</div>
+				<div class="package__item--content">
+					<p>Срок:</p>
+					<span>в пределах 24 часов</span>
+					<p>Вопросов/комплектов на оценку:</p>
+					<span>в пределах 24 часов</span>
+				</div>
+				<div class="package__item--price">
+					<h3 class="old--price">890 <i class='bx bx-ruble' ></i><span></span></h3>
+					<h3 class="new--price">499 <i class='bx bx-ruble' ></i></h3>
+				</div>
+				<button type="submit" class="package__item--send">Заказать</button>
+			</div>
+			<div class="col-lg-3 col-sm-5 package__item d-flex flex-column justify-content-between">
+				<div class="package__item--theme d-flex flex-column align-items-center ">
+					<h4>Пакет</h4>
+					<h3>«Попробовать»</h3>					
+				</div>
+				<div class="package__item--content">
+					<p>Срок:</p>
+					<span>в пределах 24 часов</span>
+					<p>Вопросов/комплектов на оценку:</p>
+					<span>в пределах 24 часов</span>
+				</div>
+				<div class="package__item--price">
+					<h3 class="old--price">890 <i class='bx bx-ruble' ></i><span></span></h3>
+					<h3 class="new--price">499 <i class='bx bx-ruble' ></i></h3>
+				</div>
+				<button type="submit" class="package__item--send">Заказать</button>
+			</div>
+			<div class="col-lg-3 col-sm-5 package__item d-flex flex-column justify-content-between">
+				<div class="package__item--theme d-flex flex-column align-items-center ">
+					<h4>Пакет</h4>
+					<h3>«Попробовать»</h3>					
+				</div>
+				<div class="package__item--content">
+					<p>Срок:</p>
+					<span>в пределах 24 часов</span>
+					<p>Вопросов/комплектов на оценку:</p>
+					<span>в пределах 24 часов</span>
+				</div>
+				<div class="package__item--price">
+					<h3 class="old--price">890 <i class='bx bx-ruble' ></i><span></span></h3>
+					<h3 class="new--price">499 <i class='bx bx-ruble' ></i></h3>
+				</div>
+				<button type="submit" class="package__item--send">Заказать</button>
+			</div>
+			
+		</div>
+	</section>
 	<!-- PACKAGE END -->
 
 	<!-- hOW TO -->
-	<section class="howto"></section>
+	<section class="howto container">
+		<h3>Как все происходит</h3>
+		<div class="d-flex flex-column flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+			<a data-fancybox="gallery" href="assets/img/first-class-stylish-help-chat-1.jpg">
+				<div class="d-flex justify-content-between rounded">
+					<img class="" src="assets/img/first-class-stylish-help-chat-1.jpg" />
+					<p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Она первую безорфографичный сих буквоград рукописи власти там всемогущая они.</p>
+				</div>
+			</a>
+			<a data-fancybox="gallery" href="assets/img/first-class-stylish-help-chat-2.jpg">
+				<div class="d-flex align-items-center justify-content-between rounded">
+					<img class="" src="assets/img/first-class-stylish-help-chat-2.jpg" />
+					<p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Текст большого он речью себя вершину своего использовало последний моей?</p>
+				</div>
+			</a>
+			<a data-fancybox="gallery" href="assets/img/first-class-stylish-help-chat-3.jpg">
+				<div class="d-flex justify-content-between rounded">
+					<img class="" src="assets/img/first-class-stylish-help-chat-3.jpg" />
+					<p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Текст большого он речью себя вершину своего использовало последний моей?</p>
+				</div>
+			</a>
+			<a data-fancybox="gallery" href="assets/img/first-class-stylish-help-chat-4.jpg">
+				<div class="d-flex justify-content-between rounded">
+					<img class="" src="assets/img/first-class-stylish-help-chat-4.jpg" />
+					<p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Текст большого он речью себя вершину своего использовало последний моей?</p>
+				</div>
+			</a>
+			
+		  </div>
+	</section>
 	<!-- hOW TO END -->
 
 	<!-- FOOOTER -->
-	<footer class="footer container"></footer>
+	<footer class="footer container d-flex flex-column align-items-center">
+		<a href="#header" class="footer--up">На вверх <i class='bx bx-chevron-up' ></i></a>
+		<ul class="align-self-start">
+			<li><a href="#!">Вакансии</a></li>
+			<li><a href="#!">Карта сайта</a></li>
+			<li><a href="#!">Перепечатка</a></li>
+			<li><a href="#!">"Glamurnenko.ru 2005-2019</a></li>
+			<li><a href="#!">Email: support@glamur.uz</a></li>
+		</ul>
+	</footer>
 	<!-- FOOOTER END -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+	<script src="assets/js/main.js"></script>
 </body>
 </html>
